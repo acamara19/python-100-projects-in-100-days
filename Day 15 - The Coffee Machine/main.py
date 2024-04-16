@@ -7,15 +7,15 @@ from coffeeItems import MENU, resources
 
 def print_report():
     # Headers for resources and menu
-    resource_headers = "Resource   | Amount"
+    resource_headers = "Resource    | Amount"
     menu_headers = "Drink       | Cost  | Ingredients"
 
     # Generate resource info lines
     resources_info = [
-        f"{'Water':<10} | {resources['water']}ml",
-        f"{'Milk':<10} | {resources['milk']}ml",
-        f"{'Coffee':<10} | {resources['coffee']}g",
-        f"{'Money':<10} | ${resources['profit']:.2f}"
+        f"{'Water💧':<10} | {resources['water']}ml",
+        f"{'Milk 🥛':<10} | {resources['milk']}ml",
+        f"{'Coffee ☕️':<11} | {resources['coffee']}g",
+        f"{'Money 🏦':<10} | ＄{resources['profit']:.2f}"
     ]
 
     # Determine the maximum length for resource and menu headers
@@ -33,7 +33,7 @@ def print_report():
     menu_lines = []
     for drink, details in MENU.items():
         ingredients = ', '.join([f"{k}: {v}g/ml" for k, v in details['ingredients'].items()])
-        line = f"{drink.capitalize():<10}  | ${details['cost']:<4} | {ingredients}"
+        line = f"{drink.capitalize():<10}  | ＄{details['cost']:<4} | {ingredients}"
         menu_lines.append(line)
 
     max_length_menu = max(len(line) for line in menu_lines + [menu_headers])
@@ -69,7 +69,7 @@ def check_transaction(inserted_money, drink_cost):
     if inserted_money >= drink_cost:
         change = round(inserted_money - drink_cost, 2)
         if change > 0:
-            print(f"Here's ${change} in change.")
+            print(f"Here's ＄{change} in change.")
         resources['profit'] += drink_cost
         return True
     else:
