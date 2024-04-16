@@ -10,7 +10,7 @@ It will take your current age as the input and output a message with our
  Where (x) is replaced with the actual calculated number of weeks the input
  age has left until age 90.
 
- Warning! your output should match the example output format exactly,
+ Warning! Your output should match the example output format exactly,
  even the positions of the commas and full stops.
 
  Notes:
@@ -30,4 +30,3 @@ print(f"{age} years = {age_in_weeks} weeks")
 total_weeks_left = max_week - age_in_weeks
 print("---------------------------")
 print(f"You have {total_weeks_left} weeks left.")
-

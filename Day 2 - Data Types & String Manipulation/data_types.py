@@ -1,11 +1,11 @@
 """
 Instructions:
 -------------
-Write a program that adds the digits in a 2 digits number. e.g. if the input
+Write a program that adds the digits in a 2-digit number. E.g., if the input
 was 35, then the output should be: 3 + 5 = 8
 
 Warning. Do not change the code on line 1. Your program should work
-for different inputs. e.g. any two-digit-number.
+for different inputs. E.g., any two-digit-number.
 
 The last line of your program should print the result.
 """

@@ -4,7 +4,7 @@ Functions:
 def my_functions():
     #Do this
     #Then do this
-    #Finally do this
+    #Finally does this
 """
 
 
@@ -19,7 +19,7 @@ def greet():
 greet()
 
 
-#  Functions that allows for input
+#  Functions that allow for input
 def greet_with_name(name):
     print(f"Hello {name}")
     print(f"How are you doing today {name}")
