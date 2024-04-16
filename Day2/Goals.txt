@@ -1,0 +1,14 @@
+Day 2
+------------------
+Data Types
+Numbers
+Operators
+Type Conversion
+F-Strings
+
+------------------
+Data Types
+
+1. String:
+    print("hello"[0])
+
